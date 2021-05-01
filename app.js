@@ -25,12 +25,10 @@ function playSound(e){
     audio.currentTime = 0;
     audio.play();
     key.classList.add('playing');
-}
+} 
 
-function removeTransition(e){  //Remove css '.playing'
-    if(e.propertyName !== 'transform') return;
+function removeTransition(){  //Remove css '.playing'
         this.classList.remove('playing');
-    
 }
 
 function defaultImg(){     //Handler to restore default images attached to buttons
@@ -42,7 +40,7 @@ keys.forEach(key => key.addEventListener('transitionend', removeTransition)); //
 
 //Window Event Listeners
 window.addEventListener('keydown', playSound); // Play sound when key is pressed 
-window.addEventListener('keydown', (e) =>{     
+window.addEventListener('keydown', (e) =>{
    //Attach each key to the respective image
    switch (e.code) {
        case "KeyA":
