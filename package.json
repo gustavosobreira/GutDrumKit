@@ -1,0 +1,23 @@
+{
+  "name": "GutDrumKit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "sass": "sass --watch style/style.css style/style.scss --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavosobreira/GutDrumKit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavosobreira/GutDrumKit/issues"
+  },
+  "homepage": "https://github.com/gustavosobreira/GutDrumKit#readme",
+  "dependencies": {
+    "sass": "^1.32.12"
+  }
+}
