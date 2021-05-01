@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gut JS Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body >
+
+  <div>
+     <img src="/img/zero.png" id="myImage" > 
+  </div>
+  
+  <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <button onclick="setTimeout(defaultImg, 200)" id="clap" class="key" type="button">clap</button>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <button onclick="setTimeout(defaultImg, 200)" id="snare" class="key" type="button">snare</button>
+    </div>
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+      <button onclick="setTimeout(defaultImg, 200)" id="kick" class="key" type="button">kick</button>
+    </div>
+    <div data-key="70" class="key">
+      <kbd>F</kbd>
+      <button onclick="setTimeout(defaultImg, 200)" id="tink" class="key" type="button">tink</button>
+    </div>
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+      <button onclick="setTimeout(defaultImg, 200)" id="hihat" class="key" type="button">hihat</button>
+    </div>
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+      <button onclick="setTimeout(defaultImg, 200)" id="openhat" class="key" type="button">openhat</button>
+    </div>
+    <div data-key="74" class="key">
+      <kbd>J</kbd>
+      <button onclick="setTimeout(defaultImg, 200)" id="ride" class="key" type="button">ride</button>
+    </div>
+    <div data-key="75" class="key">
+      <kbd>K</kbd>
+      <button onclick="setTimeout(defaultImg, 200)" id="splash" class="key" type="button">splash</button>
+    </div>
+    <div data-key="76" class="key">
+      <kbd>L</kbd>
+      <button onclick="setTimeout(defaultImg, 200)" id="crash" class="key" type="button">crash</button>
+    </div>
+  </div>
+
+  <audio data-key="65" src="sounds/clap.wav"></audio>
+  <audio data-key="83" src="sounds/snare.wav"></audio>
+  <audio data-key="68" src="sounds/kick.wav"></audio>
+  <audio data-key="70" src="sounds/tink.wav"></audio>
+  <audio data-key="71" src="sounds/hihat.wav"></audio>
+  <audio data-key="72" src="sounds/openhat.wav"></audio>
+  <audio data-key="74" src="sounds/ride.wav"></audio>
+  <audio data-key="75" src="sounds/splash.wav"></audio>
+  <audio data-key="76" src="sounds/crash.wav"></audio>
+
+  <script src="app.js"></script>
+
+
+</body>
+
+</html>
