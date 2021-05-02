@@ -28,11 +28,11 @@ function playSound(e){
 } 
 
 function removeTransition(){  //Remove css '.playing'
-        this.classList.remove('playing');
+   this.classList.remove('playing');
 }
 
 function defaultImg(){     //Handler to restore default images attached to buttons
-   document.getElementById("myImage").src = 'img/zero.png';
+   document.getElementById("myImage").src = 'img/zero.jpg';
 }
 
 //Keys Event Listeners
@@ -44,47 +44,47 @@ window.addEventListener('keydown', (e) =>{
    //Attach each key to the respective image
    switch (e.code) {
        case "KeyA":
-        document.getElementById("myImage").src = 'img/one.png';
+        document.getElementById("myImage").src = 'img/one.jpg';
         setTimeout(defaultImg, 200);
         break;
 
        case "KeyS":
-           document.getElementById("myImage").src = 'img/two.png';
+           document.getElementById("myImage").src = 'img/two.jpg';
            setTimeout(defaultImg, 200);
         break;
 
         case "KeyD":
-           document.getElementById("myImage").src = 'img/three.png';
+           document.getElementById("myImage").src = 'img/three.jpg';
            setTimeout(defaultImg, 200);
         break;
 
         case "KeyF":
-           document.getElementById("myImage").src = 'img/four.png';
+           document.getElementById("myImage").src = 'img/four.jpg';
            setTimeout(defaultImg, 200);
         break;
 
         case "KeyG":
-           document.getElementById("myImage").src = 'img/five.png';
+           document.getElementById("myImage").src = 'img/five.jpg';
            setTimeout(defaultImg, 200);
         break;
 
         case "KeyH":
-           document.getElementById("myImage").src = 'img/six.png';
+           document.getElementById("myImage").src = 'img/six.jpg';
            setTimeout(defaultImg, 200);
         break;
 
         case "KeyJ":
-           document.getElementById("myImage").src = 'img/seven.png';
+           document.getElementById("myImage").src = 'img/seven.jpg';
            setTimeout(defaultImg, 200);
         break;
 
         case "KeyK":
-           document.getElementById("myImage").src = 'img/eight.png';
+           document.getElementById("myImage").src = 'img/eight.jpg';
            setTimeout(defaultImg, 200);
         break;
 
         case "KeyL":
-           document.getElementById("myImage").src = 'img/nine.png';
+           document.getElementById("myImage").src = 'img/nine.jpg';
            setTimeout(defaultImg, 200);
         break;
 
