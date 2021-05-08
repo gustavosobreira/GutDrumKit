@@ -1,3 +1,22 @@
+let images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				'img/one.jpg',
+            'img/two.jpg',
+            'img/three.jpg',
+            'img/four.jpg',
+            'img/five.jpg',
+            'img/six.jpg',
+            'img/seven.jpg',
+            'img/eight.jpg',
+            'img/nine.jpg',
+)
+
 //Select each button ID
 const clap = document.getElementById('clap');
 const snare = document.getElementById('snare');
@@ -45,47 +64,47 @@ window.addEventListener('keydown', (e) =>{
    switch (e.code) {
        case "KeyA":
         document.getElementById("myImage").src = 'img/one.jpg';
-        setTimeout(defaultImg, 200);
+        setTimeout(defaultImg, 400);
         break;
 
        case "KeyS":
            document.getElementById("myImage").src = 'img/two.jpg';
-           setTimeout(defaultImg, 200);
+           setTimeout(defaultImg, 400);
         break;
 
         case "KeyD":
            document.getElementById("myImage").src = 'img/three.jpg';
-           setTimeout(defaultImg, 200);
+           setTimeout(defaultImg, 400);
         break;
 
         case "KeyF":
            document.getElementById("myImage").src = 'img/four.jpg';
-           setTimeout(defaultImg, 200);
+           setTimeout(defaultImg, 400);
         break;
 
         case "KeyG":
            document.getElementById("myImage").src = 'img/five.jpg';
-           setTimeout(defaultImg, 200);
+           setTimeout(defaultImg, 400);
         break;
 
         case "KeyH":
            document.getElementById("myImage").src = 'img/six.jpg';
-           setTimeout(defaultImg, 200);
+           setTimeout(defaultImg, 400);
         break;
 
         case "KeyJ":
            document.getElementById("myImage").src = 'img/seven.jpg';
-           setTimeout(defaultImg, 200);
+           setTimeout(defaultImg, 400);
         break;
 
         case "KeyK":
            document.getElementById("myImage").src = 'img/eight.jpg';
-           setTimeout(defaultImg, 200);
+           setTimeout(defaultImg, 400);
         break;
 
         case "KeyL":
            document.getElementById("myImage").src = 'img/nine.jpg';
-           setTimeout(defaultImg, 200);
+           setTimeout(defaultImg, 400);
         break;
 
 
@@ -99,10 +118,10 @@ function buttonHandler(drum, srcimg){
 
    const item = document.getElementById(drum);
       item.addEventListener('click', (e) =>{
-      let audio = new Audio(`sounds/${drum}.wav`);
-      audio.play();
-      item.classList.add('playing');
-      document.getElementById("myImage").src = `img/${srcimg}.png`;
+         let audio = new Audio(`sounds/${drum}.wav`);
+         audio.play();
+         item.classList.add('playing');
+         document.getElementById("myImage").src = `img/${srcimg}.jpg`;
    });
 };
 
